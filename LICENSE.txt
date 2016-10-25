@@ -1,0 +1,5 @@
+This code is from 
+"Introduction to Android Application Development: Android Essentials, Fifth Edition"
+
+See https://github.com/lambo4jos/introToAndroid5e   
+for license information
