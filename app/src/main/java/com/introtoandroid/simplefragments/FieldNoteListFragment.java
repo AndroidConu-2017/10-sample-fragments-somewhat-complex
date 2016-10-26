@@ -22,6 +22,7 @@ public class FieldNoteListFragment extends ListFragment implements
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
 		super.onActivityCreated(savedInstanceState);
+		Log.d(TAG, "FRAGMENT onActivityCreated()");
 
 		getListView().setChoiceMode(ListView.CHOICE_MODE_SINGLE);
 
@@ -52,6 +53,7 @@ public class FieldNoteListFragment extends ListFragment implements
 
 	@Override
 	public void onBackStackChanged() {
+		Log.d(TAG, "FRAGMENT onBackStackChanged()");
 		// update position
 		FieldNoteWebViewFragment details = (FieldNoteWebViewFragment) getFragmentManager()
 				.findFragmentById(R.id.fieldentry);
@@ -70,10 +72,12 @@ public class FieldNoteListFragment extends ListFragment implements
 	public void onSaveInstanceState(Bundle outState) {
 		super.onSaveInstanceState(outState);
 		outState.putInt("curChoice", mCurPosition);
+		Log.d(TAG, "FRAGMENT onSaveInstanceState()");
 	}
 
 	@Override
 	public void onListItemClick(ListView l, View v, int position, long id) {
+		Log.d(TAG, "FRAGMENT onListItemClick()");
 		viewAnimalInfo(position);
 	}
 
