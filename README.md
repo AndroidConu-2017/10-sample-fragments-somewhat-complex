@@ -1,5 +1,7 @@
-# week11-SimpleFragments
-Sample code from the course textbook (see 
+# -SimpleFragments
+Sample code from the course textbook
+
+Annuzzi, Darcey, Conder Introduction to Android Application Development: Android Essentials, 5/E ISBN-13: 978-0134389455
 
 On portrat it shows two activities 
 1. Activity with a ListFragment with an onclick that launches 
